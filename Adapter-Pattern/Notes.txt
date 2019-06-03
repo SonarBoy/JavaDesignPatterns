@@ -1,0 +1,9 @@
+Adapter Pattern Notes:
+
+- Used to combine two incopatible interfaces.
+- Structural Design Pattern
+- Consists of a single class used to join functionalities
+  of independent or incompatible interfaces.
+- Case of card reader which acts as an adapter between memory card and a laptop
+
+

@@ -1,0 +1,9 @@
+Flyweight Pattern:
+
+- Comes under the structural pattern as provides
+- Used to reduce the number of objects created to decrease memory footprint.
+- tries to resue already existing similar kind objects by storing them and creates
+  new object when no matching object is found.
+
+
+  
