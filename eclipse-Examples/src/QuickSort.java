@@ -1,16 +1,28 @@
 
 public class QuickSort {
 	
+	//Picks an Element as a pivot and partitions the give array around
+	//the given array aroung the picked pivot.
+	
 	int partition(int array[],int low,int high) {
 		
+		//Usually last element of the first array is the pivot element
 		int pivot = array[high];
 		int index = (low - 1);
 		
+		
 		for(int runner = low; runner < high; runner++) {
 			
+			//If the end of the array is less than or equal to the pivot
 			if(array[runner] <= pivot) {
+				
+				//Increase the index variable by 
 				index++;
 				
+				//Take the element at the array index store it in a temp
+				//variable. Assing the current value at the current position
+				//in the array in the previous index. Re assign the index at 
+				//runner value.
 				int temp = array[index];
 				array[index] = array[runner];
 				array[runner] = temp;
@@ -18,10 +30,13 @@ public class QuickSort {
 			
 		}
 		
+		//Same thing as above but this is a shift for when 
+		//the current value is greater than the pivot
 		int temp = array[index + 1];
 		array[index + 1] = array[high];
 		array[high] = temp;
 		
+		//Returns the current index plus 1 to start of the next array.
 		return index + 1;
 	}
 	
@@ -30,6 +45,7 @@ public class QuickSort {
 		
 		if(low < high) {
 			this.printArray(array);
+			
 			int part = partition(array,low,high);
 			
 			sort(array, low, part - 1);
@@ -51,7 +67,7 @@ public class QuickSort {
 	}
 	
 	public static void main(String args[]) {
-		int array[] = {10,7,8,9,1,5};
+		int array[] = {10,9,8,7,6,5,4,3,2,1};
 		int n = array.length;
 		
 		QuickSort sorter = new QuickSort();
