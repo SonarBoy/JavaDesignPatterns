@@ -6,4 +6,18 @@ Adapter Pattern Notes:
   of independent or incompatible interfaces.
 - Case of card reader which acts as an adapter between memory card and a laptop
 
+First Case for eclipse Project
+
+https://www.reddit.com/r/dailyprogrammer/comments/afxxca/20190114_challenge_372_easy_perfectly_balanced/
+
+https://www.reddit.com/r/dailyprogrammer/comments/a0lhxx/20181126_challenge_369_easy_hex_colors/
+
+
+1) X and Y option.
+2) Unique times letters ouccor(Bonus)
+3) Hexidecimal converter.
+
+
+
+
 
