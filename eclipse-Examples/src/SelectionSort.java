@@ -1,7 +1,7 @@
 
-public class SelectionSort {
+public class SelectionSort implements Sort{
 	
-	void sort(int array[]) {
+	public void sort(int array[]) {
 		int arrayLength = array.length;
 		
 		//The outer loop moves the boundary of the unsorted subarray
@@ -23,13 +23,15 @@ public class SelectionSort {
 			
 			//here we switch out the minimum value found with the first element
 			int temp = array[minimum_idx];
-			array[minimum_idx] = array[minimum_idx];
+			array[minimum_idx] = array[runner];
 			array[runner] = temp;
 		}
+		
+	
 	}
 	
 	// Prints the array 
-    void printArray(int arr[]) 
+    public void printArray(int arr[]) 
     { 
         int n = arr.length; 
         for (int i=0; i<n; ++i) 
@@ -44,6 +46,12 @@ public class SelectionSort {
 		
 		System.out.println("Sorted Array: ");
 		obj.printArray(array);
+	}
+
+	@Override
+	public void sort(int[] array, int x, int y) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

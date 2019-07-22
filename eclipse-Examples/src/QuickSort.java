@@ -1,8 +1,8 @@
 
-public class QuickSort {
+public class QuickSort implements Sort{
 	
 	//Picks an Element as a pivot and partitions the give array around
-	//the given array aroung the picked pivot.
+	//the given array aroun the picked pivot.
 	
 	int partition(int array[],int low,int high) {
 		
@@ -41,7 +41,7 @@ public class QuickSort {
 	}
 	
 	
-	void sort(int array[],int low,int high) {
+	public void sort(int array[],int low,int high) {
 		
 		if(low < high) {
 			this.printArray(array);
@@ -55,7 +55,7 @@ public class QuickSort {
 		
 	}
 	
-	static void printArray(int array[]) {
+	public void printArray(int array[]) {
 		
 		int leng = array.length;
 		
@@ -75,9 +75,16 @@ public class QuickSort {
 		
 
         System.out.println("sorted array"); 
-        printArray(array); 
+       // printArray(array); 
 		
 		
+		
+	}
+
+
+	@Override
+	public void sort(int[] array) {
+		// TODO Auto-generated method stub
 		
 	}
 }

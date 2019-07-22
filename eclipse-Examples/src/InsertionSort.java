@@ -1,7 +1,7 @@
 
-public class InsertionSort {
-
-	void sort(int array[]) {
+public class InsertionSort implements Sort{
+	
+	public void sort(int array[]) {
 		int arrayLength = array.length;
 		
 		for(int runner = 1; runner < arrayLength; runner++) {
@@ -32,7 +32,7 @@ public class InsertionSort {
 	}
 	
 	
-	static void printArray(int arr[]) 
+	public void printArray(int arr[]) 
     { 
         int n = arr.length; 
         for (int i = 0; i < n; ++i) 
@@ -50,7 +50,14 @@ public class InsertionSort {
 		sorter.sort(array);
 		
 		System.out.println("Sorted Array: ");
-		printArray(array);
+		//printArray(array);
+	}
+
+
+	@Override
+	public void sort(int[] array, int x, int y) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
